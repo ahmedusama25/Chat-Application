@@ -12,6 +12,11 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
+
+
+
+
+     
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -27,12 +32,26 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 </head>
-<body>
-    <div id="messageContainer">
 
-    </div>
+
+<body>
+  <div class="SignupPage">  
+    <legend>
+    <h1>SignUp</h1>
+    
+    <input type="text" id="SignupEmail" placeholder="Enter a valid Email Address" ><br>
+    <input type="password" name="xzc" id="SignupPassword" placeholder="Enter a valid atleast 6 digit password"><br>
+    <button onclick="SignupInfo()">Submit</button>
+  </legend>
+
+
+  </div>
+    <div class="messageContainer" id="messageContainer">
+
+    
     <input type="text" id="inputText" placeholder="Enter your message">
     <button onclick="send()">Send</button>
-</body>
+  </div>
+  </body>
 <script src="app.js"></script>
 </html>
