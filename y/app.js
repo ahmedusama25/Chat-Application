@@ -2,11 +2,19 @@ let SignupInfo = () => {
     let messageContainer= document.getElementById("messageContainer");
     let SignupPage = document.getElementsByClassName("SignupPage")
     messageContainer.style.display="inline"
-    SignupPage[0].style.display="none";
+    SignupPage[0].style.visibility = "hidden"
+
+    let Signupemail = document.getElementById("SignupEmail")
+    let SignupPassword = document.getElementById("SignupPassword")
+
+    let Info = {
+        Email: Signupemail.value,
+        Password : SignupPassword.value
+    }
 
     
     
-    //console.log("")
+    console.log(Info)
 }
 
 
